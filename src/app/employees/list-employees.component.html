@@ -1,0 +1,23 @@
+ <!-- <h1>
+   {{dataFromChild}}
+ </h1> 
+  <div *ngFor="let employee of employees">
+  <app-display-employee [employee]="employee" ></app-display-employee>
+  <app-display-employee [employee]="employee" (notify)="handleNotify($event)"></app-display-employee>
+ </div>  -->
+ <div class="form-group">
+  <input type="text" class="form-control" placeholder="Search by Name" width="300"
+   [(ngModel)]="searchTerm"/>
+ </div>
+<div *ngFor="let employee of employees | employeeFilter:searchTerm">
+    
+  <app-display-employee [employee]="employee" (notifyDelete)="onDeleteNotification($event)">
+
+  </app-display-employee>
+
+
+</div>
+
+<div *ngIf="error">
+  {{error}}
+</div>

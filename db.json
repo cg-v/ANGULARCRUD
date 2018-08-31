@@ -1,0 +1,52 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "rama",
+      "gender": "male",
+      "email": "werwerc@g.com",
+      "phoneNumber": 2323,
+      "contactPreference": "phone",
+      "dateOfBirth": "2018-08-06T09:01:34.000Z",
+      "department": "2",
+      "isActive": true,
+      "photoPath": "assets/images/index.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Jack",
+      "gender": "male",
+      "email": "abc@g.com",
+      "phoneNumber": 23233,
+      "contactPreference": "phone",
+      "dateOfBirth": "1979/11/20",
+      "department": "2",
+      "isActive": true,
+      "photoPath": "assets/images/index1.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Mary",
+      "gender": "female",
+      "email": "ert@g.com",
+      "phoneNumber": 345,
+      "contactPreference": "phone",
+      "dateOfBirth": "1979/11/20",
+      "department": "4",
+      "isActive": true,
+      "photoPath": "assets/images/index3.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "visruth",
+      "gender": "female",
+      "contactPreference": "phone",
+      "phoneNumber": "123455667",
+      "email": "chithugopal@gmail.com",
+      "dateOfBirth": null,
+      "department": "1",
+      "isActive": true,
+      "photoPath": null
+    }
+  ]
+}
