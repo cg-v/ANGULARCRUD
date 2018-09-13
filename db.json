@@ -35,18 +35,6 @@
       "department": "4",
       "isActive": true,
       "photoPath": "assets/images/index3.jpeg"
-    },
-    {
-      "id": 4,
-      "name": "visruth",
-      "gender": "female",
-      "contactPreference": "phone",
-      "phoneNumber": "123455667",
-      "email": "chithugopal@gmail.com",
-      "dateOfBirth": null,
-      "department": "1",
-      "isActive": true,
-      "photoPath": null
     }
   ]
 }

@@ -8,7 +8,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http'
 export class EmployeeService{
     constructor(private httpClient : HttpClient){}
     baseUrl='http://localhost:3000/employees';
-    private listEmployees : Employee[] =[
+    //private listEmployees : Employee[] =[
        /*  {
           id : 1,
           name :'tom',
@@ -45,7 +45,7 @@ export class EmployeeService{
         isActive :true,
         photoPath :'assets/images/index3.jpeg'
       } */
-      ];
+    //  ];
 
     getEmployees() :Observable<Employee[]>{
         //return of(this.listEmployees).pipe(delay(500));
@@ -90,9 +90,9 @@ export class EmployeeService{
         
 
 
-    deleteEmployee(id :number): Observable<void>{ alert("delete");
-        return  this.httpClient.delete<void>(this.baseUrl).pipe(
-            catchError(this.handleError)); 
+    deleteEmployee(id :number): Observable<void>{ 
+        return this.httpClient.delete<void>(`${this.baseUrl}/${id}`) 
+    .pipe(catchError(this.handleError));
         }
     }
 
